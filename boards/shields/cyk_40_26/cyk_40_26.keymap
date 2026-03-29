@@ -13,5 +13,21 @@
                 &kp LCTRL       &kp LALT &kp LGUI &kp SPACE   &kp SPACE       &kp RGUI         &kp LEFT &kp DOWN &kp RIGHT
             >;
         };
+
+        extra_layer_1 {
+            status = "reserved";
+        };
+
+        extra_layer_2 {
+            status = "reserved";
+        };
+
+        extra_layer_3 {
+            status = "reserved";
+        };
+
+        extra_layer_4 {
+            status = "reserved";
+        };
     };
 };
