@@ -18,3 +18,9 @@
 #     artifact-name: corne_left_with_studio
 #
 ---
+include:
+  - board: xiao_ble
+    shield: cyk_40_26
+    snippet: studio-rpc
+  - board: xiao_ble
+    shield: settings_reset

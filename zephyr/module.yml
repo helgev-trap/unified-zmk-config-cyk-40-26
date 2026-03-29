@@ -1,3 +1,5 @@
+name: cyk-40-26
+
 build:
   settings:
     board_root: .

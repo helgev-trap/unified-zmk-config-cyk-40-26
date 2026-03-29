@@ -1,0 +1,2 @@
+config SHIELD_CYK_40_26
+    def_bool $(shields_list_contains,cyk_40_26)
