@@ -1,6 +1,6 @@
 file_format: "1"
 id: cyk_40_26
-name: cyk-40-26
+name: cyk_40_26
 type: shield
 requires: [xiao_ble]
 features:

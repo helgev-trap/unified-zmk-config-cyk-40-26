@@ -1,6 +1,6 @@
 if SHIELD_CYK_40_26
 
 config ZMK_KEYBOARD_NAME
-    default "cyk-40-26"
+    default "cyk_40_26"
 
 endif
