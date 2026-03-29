@@ -18,7 +18,7 @@
             , <&gpio1 13 GPIO_ACTIVE_HIGH> /* Col03: pin09 */
             , <&gpio1 3  GPIO_ACTIVE_HIGH> /* Col04: pin21 */
             , <&gpio1 12 GPIO_ACTIVE_HIGH> /* Col05: pin08 */
-            , <&gpio1 17 GPIO_ACTIVE_HIGH> /* Col06: pin23 */
+            , <&gpio1 7  GPIO_ACTIVE_HIGH> /* Col06: pin23 */
             , <&gpio1 15 GPIO_ACTIVE_HIGH> /* Col07: pin11 */
             , <&gpio0 9  GPIO_ACTIVE_HIGH> /* Col08: pin18 */
             , <&gpio0 29 GPIO_ACTIVE_HIGH> /* Col09: pin04 */
@@ -29,7 +29,7 @@
             ;
 
         row-gpios
-            = <&gpio0 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row01: pin05 */
+            = <&gpio0 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row01: pin05 */
             , <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row02: pin19 */
             , <&gpio0 5  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row03: pin06 */
             , <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* Row04: pin20 */
