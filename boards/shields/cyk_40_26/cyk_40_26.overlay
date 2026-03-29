@@ -1,6 +1,9 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "cyk_40_26-layouts.dtsi"
 
+/delete-node/ &vbatt;
+/delete-node/ &adc;
+
 / {
     chosen {
         zmk,kscan = &kscan0;
