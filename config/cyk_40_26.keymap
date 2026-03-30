@@ -4,6 +4,40 @@
 #include <dt-bindings/zmk/outputs.h>
 
 / {
+    macros {
+        // Windows Virtual Desktop movements
+        vdt_left: vdt_left {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LALT>
+                , <&macro_tap &kp LEFT>
+                , <&macro_release &kp LCTRL &kp LALT>
+                ;
+        };
+        vdt_right: vdt_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LALT>
+                , <&macro_tap &kp RIGHT>
+                , <&macro_release &kp LCTRL &kp LALT>
+                ;
+        };
+        // Open Task Manager
+        taskmgr: taskmgr {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL &kp LALT>
+                , <&macro_tap &kp ESC>
+                , <&macro_release &kp LCTRL &kp LALT>
+                ;
+        };
+    };
+};
+
+/ {
     keymap {
         compatible = "zmk,keymap";
 
@@ -29,8 +63,8 @@
         // Symbols
         layer_2 {
             bindings = <
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LBKT  &kp RBKT
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp SEMI  &kp SQT
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &taskmgr  &kp UP  &vdt_left  &vdt_right  &kp LBKT  &kp RBKT
+                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp SEMI  &kp SQT
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COMMA  &kp PERIOD  &kp SLASH  &kp BACKSLASH
                 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
