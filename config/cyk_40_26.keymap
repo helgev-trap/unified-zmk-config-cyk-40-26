@@ -10,18 +10,18 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL &kp LALT>
+                = <&macro_press &kp LCTRL &kp LGUI>
                 , <&macro_tap &kp LEFT>
-                , <&macro_release &kp LCTRL &kp LALT>
+                , <&macro_release &kp LCTRL &kp LGUI>
                 ;
         };
         vdt_right: vdt_right {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp LCTRL &kp LALT>
+                = <&macro_press &kp LCTRL &kp LGUI>
                 , <&macro_tap &kp RIGHT>
-                , <&macro_release &kp LCTRL &kp LALT>
+                , <&macro_release &kp LCTRL &kp LGUI>
                 ;
         };
         // Open Task Manager
