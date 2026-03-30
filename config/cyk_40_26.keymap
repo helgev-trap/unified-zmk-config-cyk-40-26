@@ -49,40 +49,44 @@
 
         default_layer {
             bindings = <
-                &kp TAB  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &kp DEL
-                &kp ENTER  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp ENTER
-                &kp LEFT_SHIFT  &kp GRAVE  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH  &kp RIGHT_SHIFT
-                &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1  &kp SPACE  &mo 2  &kp RIGHT_ALT  &kp RIGHT_GUI  &kp RCTRL
+            //  1               2               3               4               5               6               7               8               9               10              11              12              13
+                &kp ESC         &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Y           &kp U           &kp I           &kp O           &kp P           &kp BSPC        &kp DEL
+                &kp A           &kp S           &kp D           &kp F           &kp G           &kp TAB         &kp H           &kp J           &kp K           &kp L           &kp SEMI        &kp SQT
+                &kp Z           &kp X           &kp C           &kp V           &kp B           &kp ENTER       &kp LSHIFT      &kp N           &kp M           &kp COMMA       &kp PERIOD      &kp SLASH       &kp BACKSLASH
+                &kp LCTRL       &kp LEFT_GUI    &kp LEFT_ALT    &mo 1           &kp SPACE       &mo 2           &kp RIGHT_ALT   &kp RIGHT_GUI   &kp RCTRL
             >;
         };
 
         // Functions and numbers
         layer_1 {
             bindings = <
-                &kp ESCAPE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-                &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp EQUAL
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &kp SPACE &trans &trans  &trans  &trans
+            //  1               2               3               4               5               6               7               8               9               10              11              12              13
+                &kp GRAVE       &kp F1          &kp F2          &kp F3          &kp F4          &kp F5          &kp F6          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11         &kp F12
+                &kp N1          &kp N2          &kp N3          &kp N4          &kp N5          &kp N6          &kp N7          &kp N8          &kp N9          &kp N0          &kp MINUS       &kp EQUAL
+                &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans
+                &trans          &trans          &trans          &trans          &kp SPACE       &trans          &trans          &trans          &trans
             >;
         };
 
         // Symbols
         layer_2 {
             bindings = <
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &taskmgr  &kp UP  &vdt_left  &vdt_right  &kp LBKT  &kp RBKT
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp SEMI  &kp SQT
-                &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COMMA  &kp PERIOD  &kp SLASH  &kp BACKSLASH
-                &trans  &trans  &trans  &trans  &kp SPACE  &trans  &trans  &trans  &trans
+            //  1               2               3               4               5               6               7               8               9               10              11              12              13
+                &trans          &trans          &trans          &trans          &trans          &trans          &trans          &taskmgr        &kp UP          &vdt_left       &vdt_right      &kp LBKT        &kp RBKT
+                &trans          &trans          &trans          &trans          &trans          &trans          &trans          &kp LEFT        &kp DOWN        &kp RIGHT       &kp SEMI        &kp SQT
+                &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &kp COMMA       &kp PERIOD      &kp SLASH       &kp BACKSLASH
+                &trans          &trans          &trans          &trans          &kp SPACE       &trans          &trans          &trans          &trans
             >;
         };
 
         // Bluetooth and Settings
         layer_3 {
             bindings = <
-                &studio_unlock &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none &none &none &none &none &bt BT_CLR &bt BT_CLR_ALL
-                &none &none &none &none &none &none &none &none &none &none &out OUT_BLE &out OUT_USB
-                &none &none &none &none &none &none &none &none &none &none &none &none &none
-                &none &none &none &trans &none &trans &none &none &none
+            //  1               2               3               4               5               6               7               8               9               10              11              12              13
+                &studio_unlock  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &none           &none           &none           &none           &none           &bt BT_CLR      &bt BT_CLR_ALL
+                &none           &none           &none           &none           &none           &none           &none           &none           &none           &none           &out OUT_BLE    &out OUT_USB
+                &none           &none           &none           &none           &none           &none           &none           &none           &none           &none           &none           &none           &none
+                &none           &none           &none           &trans          &none           &trans          &none           &none           &none
             >;
         };
     };
